@@ -1,0 +1,267 @@
+/**
+ * Typography is specified in here.
+ */
+
+html {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-family: $font-secondary;
+    font-weight: 300;
+}
+
+b, strong {
+	font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $font-secondary;
+	color: $color_bali-hai;
+	font-weight: 400;
+	margin: 0;
+	text-align: left;
+	//text-transform: uppercase;
+}
+
+
+h4 {
+	font-family: $font-main;
+	font-weight: 600;
+}
+
+a {
+	color: $color_bali-hai;
+}
+
+
+
+h1 {
+	font-weight: 300;
+	font-size: 4rem;
+	line-height: 1.333;
+	margin-bottom: 1.5rem;
+    color: #fff;
+	a {
+		text-decoration: none;
+	}
+    @include breakpoint($break_medium) {
+        font-size: 3.5rem;
+    }
+    @include breakpoint($break_small) {
+        font-size: 2.75rem;
+    }
+}
+
+.project-grid-header {
+    h1 {
+        color: $color_bali-hai;
+    }
+}
+
+#intro h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+	
+	font-size: 1.25rem;
+    margin-bottom: .5rem;
+    a {
+        transition: all .2s;
+        color: $color_bali-hai;
+        //opacity: .8;
+        text-decoration: none;
+        color: $main-color;
+        &:hover {
+            color: $color_bali-hai;
+        }
+    }
+}
+
+h3 {
+	text-align: left;
+	font-size: 1.063rem;
+    &.city {
+        color: rgba(255,255,255,1);
+        text-align: center;
+        margin: .75rem 0;
+    }
+}
+
+#intro h3 {
+    color: #fff;
+}
+
+h3 .city {
+    
+}
+
+h5 {
+    font-family: $font-secondary;
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: rgba(255,255,255,1);
+    margin: 0;
+    @include breakpoint($break_medium) {
+        font-size: 1.5rem;
+    }
+    @include breakpoint($break_small) {
+        font-size: 1.25rem;
+    }
+}
+
+h6 { //Filter text
+    font-family: $font-secondary;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1;
+    color: $color_bali-hai;
+    text-align: left;
+}
+
+p { 
+	font-size: 1.125rem;
+	line-height: 1.6;
+    font-weight: 300;
+	text-align: left;
+	margin: 0 0 1.25rem 0 ;
+	font-variant-ligatures: common-ligatures;
+    @include breakpoint($break_small) {
+        font-size: 1rem;
+    }
+}
+
+#intro p, #intro a {
+    color: #fff;
+}
+
+.name {
+	font-family: $font-secondary;
+    font-weight: 700;
+	font-size: 7.5vw;
+	letter-spacing: .03em;
+	line-height: .8;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+    overflow: hidden; //combined with line-height reduces link clickable area
+    @include breakpoint($break_medium-portfolio) {
+        font-size: 10.7vw;
+    }
+    
+    
+    a {
+		text-decoration: none;
+		transition: all .2s;
+        color: rgba(255,255,255,1);
+		&:hover {
+			color: rgba(255,255,255,.8);
+		}
+	}
+	
+}
+
+.contact, .social {
+	font-family: $font-secondary;	
+    font-size: .875rem;
+    font-weight: 300;
+    white-space: nowrap;
+	a {
+		color: rgba(255,255,255,1);
+        text-decoration: none;
+		transition: all .2s;
+		&:hover {
+			color: rgba(255,255,255,.8);
+		}
+	}
+}
+
+
+
+.filter-title {
+    font-family: $font-secondary;	
+	color: $main-color;
+	text-align: left;
+    font-size: .8rem;
+    font-weight: 300;
+	//text-transform: uppercase;
+    //letter-spacing: .04em;
+}
+
+h6.filter-button {
+    transition: all .2s;
+    cursor: pointer;
+    //color: $main-color;
+    margin: 0 0 .5rem 0;
+}
+
+.filter-inactive {
+    color: $main-color;
+    
+}
+
+.filter-active {
+    font-size: 1.75rem;
+    color: $color_bali-hai;
+}
+
+.amp-before {
+    transition: all .2s;
+    &:before {
+         content: "& ";    
+        }
+}
+
+.caption {
+    font-size: .875rem;
+    margin-bottom: 1rem;
+    font-family: $font-secondary;
+    font-weight: 300;
+    color: $main-color;
+}
+
+.project .caption {
+    color: $main-color;
+}
+
+.meta {
+	font-size: .875em;
+	margin: 0;
+}
+
+.browse-container {
+    h2, h3, p, li {
+        color: #fff;
+        text-align: left;
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+            transition: all .2s;
+            border-bottom: 1px solid transparent;
+            &:hover {
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+    h2 {
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.333;
+        margin-bottom: 1rem;
+    }
+    li {
+        font-size: 1.25rem;
+        margin-bottom: .25rem;
+    }
+}
+
+/*
+.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading p, .wf-loading .name, .wf-loading .contact, .wf-loading .filter-title, .wf-loading .caption, .wf-loading .meta, {
+visibility: hidden;
+}
+*/

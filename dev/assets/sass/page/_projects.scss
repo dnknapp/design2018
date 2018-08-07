@@ -1,0 +1,268 @@
+.project-main {
+  padding: 0 4% 2rem 4%;
+}
+
+.project {
+	@extend .isotope;
+    padding-top: 3rem;
+    position: relative;
+}
+
+/*
+.project {
+	width: 100%;
+	margin: 0 auto 2.5rem auto;
+	border: 3.5rem solid $color_beige;
+  background: $color_beige;
+	text-align: center;
+	//min-height: 1000px; //hack to prevent gutters from shifting	
+	&:after {
+		@extend %clearfix;
+	}
+}
+*/
+
+.project-header-container {
+    @extend main;
+    background: none;
+}
+
+.project-header {
+    position: absolute;
+    width: 100%;
+    top: -16px;
+    height: 6rem;
+    overflow: hidden;
+    background-color: none;
+    .project-header-bg {
+        height: 10rem;
+        background: $color_bali-hai url('') center top;
+        background-size: cover;
+        filter: blur(10px);
+        transform: scale(1.2);
+        background-blend-mode: overlay;
+    }    
+    
+}
+
+#intro h3 {
+    margin-top: 2rem;
+}
+
+.project-description {
+	//@include span(9 of 9);
+	width: 72%;
+    margin: 5.5rem auto 5rem;
+    //margin-bottom: 2rem;
+    //margin-top: 2rem;
+	@include breakpoint($break_medium-portfolio) {
+		//@include span(9 of 9);
+	}
+	@include breakpoint($break_small-portfolio) {
+		//@include span(9 of 9);
+        width: 90%;
+        margin-top: 0;
+	}
+}
+
+.project p {
+    padding: 2rem 17.4%;
+    @include breakpoint($break_medium-portfolio) {
+        padding: 1rem 3.5% 2rem;
+    }
+}
+
+.project-images {
+	@include span(9 of 9 last);
+	img {
+		//box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+        //filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.2)); 
+	}
+	@include breakpoint($break_medium-portfolio) {
+		@include span(9 of 9 last);
+	}
+	@include breakpoint($break_small-portfolio) {
+		@include span(9 of 9);
+	}
+}
+
+
+
+.portfolio-img-half {
+	@include span(4 of 8);
+	&:nth-child(even) { //this was 2n, seems to fix right/left image problem
+		@include span(4 of 8 last);
+	}
+}
+
+.portfolio-img, .portfolio-img-half {
+    margin-bottom: 3rem;
+    .caption {
+        margin-left: .9em;
+        text-indent: -.9em;
+        margin-bottom: .5rem;
+        &:before {
+            content: "\f0d7";
+            font-family: FontAwesome;
+            font-size: 1.25em;
+            margin-right: .3em;
+        }
+    }
+}
+
+
+
+.yrly-animation, .causeengine-animation, .vynamic-animation  {
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    padding: 4rem 0;
+    background-position: center;
+    @include breakpoint($break_small-grid) {
+        padding: 2rem 0;
+    }
+}
+
+.yrly-animation {
+    background-image: url(../img/yrly/yrly-animation-bg.jpg);
+    padding: 2rem 0;
+    svg {
+        width: 80%;
+        margin: 0 auto;
+        @include breakpoint($break_small-grid) {
+            width: 90%;
+        }
+    }
+}
+
+.causeengine-animation {
+    background-image: url(../img/causeengine/causeengine-animation-bg.jpg);
+    img {
+        width: 50%;
+        margin: 0 auto;
+        padding: 1.5rem 0;
+        @include breakpoint($break_medium) {
+            width: 70%;
+        }
+        @include breakpoint($break_small-grid) {
+            width: 90%;
+            padding: 1rem 0;
+        }
+    }
+}
+
+.vynamic-animation {
+    background: #ccc;
+    box-shadow: inset 0 0 200px rgba(0,0,0,.1);
+    img {
+        width: 30%;
+        margin: 0 auto;
+        //padding: 1.5rem 0;
+        box-shadow: 0 3px 15px rgba(0,0,0,.2);
+        @include breakpoint($break_medium) {
+            width: 60%;
+        }
+        @include breakpoint($break_small-grid) {
+            width: 80%;
+            padding: 1rem 0;
+        }
+    }
+}
+
+img.portfolio-img-no-shadow {
+	box-shadow: none;
+}
+
+.project-break {
+	@include span(9 of 9);
+}
+
+.explode-container {
+	position:relative;
+	@include span(9 of 9);
+    padding:7rem 7% 4rem 7%;
+    //border-top: 2px solid $color_bali-hai;
+	//border-bottom: 2px solid $color_bali-hai;
+	margin: 1rem 0 2.5rem 0;
+    background: #fff;
+    box-shadow: inset 0 0 200px rgba(0,0,0,.1);
+	@extend %clearfix;
+	@include breakpoint($break_medium-portfolio) {
+		padding: 1rem 1.5% 2rem;
+	}
+	@include breakpoint($break_small-portfolio) {
+		margin: 0 0 2rem;
+	}
+}
+
+#explode-buttons {
+    position: absolute;
+    top: 2rem;
+	left: 1rem;
+    z-index: 1;
+    //padding-left: 16%;
+	@include breakpoint($break_medium-portfolio) {
+		position: relative;
+        padding: 0;
+		//margin: 0 auto;
+		top: 0;
+        left: 0;
+		//text-align: center;
+	}
+}
+
+#explode, #reset-explode {	
+    position: relative;
+	//float: left;
+	margin: 0 0 1.5rem 1rem;
+	display:inline-block;
+    //background-color: $color_bali-hai;
+    color: $main-color;
+    border: 1px solid $main-color;
+    cursor:pointer;
+    padding:.875rem 1rem;
+	font-family: $font-secondary;
+    font-size: .875rem;
+    line-height: 1;
+    border-radius: 3px;
+    //text-transform:uppercase;
+	//letter-spacing: .04em;
+	transition: all .2s;
+        &:hover {
+            color: $color_bali-hai ;
+            border: 1px solid $color_bali-hai;
+        }
+    @include breakpoint($break_medium-portfolio) {
+		//margin: 1rem 0 .5rem 1rem;
+	}
+    
+}
+
+#seps-container {
+	/*width:50%;*/ /* the widths are inline because they're all different */
+	position:relative;
+	margin:0 auto;
+	-webkit-perspective:2000px;
+	perspective:2000px;
+}
+
+#print-all {
+	width:100%;
+	height:100%;
+	position:relative;
+	-webkit-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+}
+
+.print-layer {
+	position:absolute;
+	-webkit-transform-origin:0 0;
+	transform-origin:0 0;
+	-webkit-transition: all 600ms;
+	transition: all 600ms;
+	-webkit-backface-visibility: hidden;
+}
+
+#paper1 {
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}

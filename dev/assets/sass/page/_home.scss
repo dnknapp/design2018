@@ -1,0 +1,207 @@
+/**
+ * All styles related to markup inside the main element
+ */
+
+.container {
+	@include container;
+	@extend %clearfix;
+    padding: .5rem 2%;
+}
+
+
+
+main {
+	position: relative;
+	//@include span(14 of 14);
+	float: left;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding: 0 7% 2rem 7%;
+    background: rgba(255,255,255,.9);
+    //background: linear-gradient(155deg, $color_beige 0%,$color_bg-light 25%,$color_beige 75%,$color_bg-light 100%);
+ 
+    /*
+	@include breakpoint($break_small) {
+		padding: 0;
+        width: 100%;
+        margin: 0;
+	}
+    */
+}
+
+.intro-container, .browse-container {
+    display: inline-block;
+    width: 100%;
+    //min-height: 75vh; //faking full screen effect
+    margin: .5rem 0 1rem;
+    text-align: center;
+    padding: 0 20%;
+    @include breakpoint($break_medium-portfolio) {
+        padding: 0 7%;
+    }
+} 
+
+#intro-img {
+    
+}
+
+#intro-img img {
+    margin: 0 auto;
+    width: 150px;
+    //border: 1px solid #fff;
+    border-radius: 50%;
+    //opacity: 0;
+}
+
+#intro {
+    //position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 2rem 0 3rem;
+    text-align: left;
+    //opacity: 0;
+    
+}
+    
+.project-grid-header {
+    margin: 2rem 0 5rem 0;
+        //position: relative;
+        //top: -2rem;
+    h1 {
+        display: inline-block;
+        margin: 0;
+        vertical-align: top;
+    }
+    @include breakpoint($break_small) {
+        margin: 1.5rem 0 2.5rem 0;
+    }
+}    
+
+/* ---- Filter ----- */
+
+ 
+    
+.filter-container {
+	display: inline-block;
+	margin: 1rem 0 0 3rem;
+	//padding: 0 0 0 3rem;
+}
+
+.filter-title {
+	margin-bottom: .5rem;
+    
+}
+
+.filters {
+	//margin: 0 auto;
+	//@extend %clearfix;
+	@include breakpoint($break_small) {
+		//width: 300px;
+	}
+}
+
+
+
+
+/* ---- isotope test ---- */
+
+.isotope {
+	width: 100%;
+	margin: 0 auto;
+	min-height: 1000px; //fix to prevent gutters from shifting	
+	&:after {
+		@extend %clearfix;
+	}
+}
+
+
+
+/* Isotope grid setup */
+
+
+.item,
+.grid-sizer {
+  width: 46.5%;
+	@include breakpoint($break_small-grid) {
+		width: 100%;
+	}
+}
+
+.gutter-sizer { 
+	width: 7%; 
+}
+
+.item {
+    min-height: 100px;
+	margin-bottom: 6vw;
+	@extend %clearfix;
+    @include breakpoint($break_small-grid) {
+        margin-bottom: 10vw;
+    }
+    @include breakpoint($break_small) {
+        margin-bottom: 13vw;
+    }
+    
+	.item-transform {
+		transition: all .3s;
+		transform: scale(1);
+
+        .item-image {
+            overflow: hidden; //hide edges of transforms
+        }	
+        
+        img {
+            //box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+            //transition: all .3s;
+        }   
+        
+        h2, .caption {
+            width: 100%;
+        } 
+	}
+}
+
+
+/* Tilt Effect */
+
+.tilt {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: scale(1.03); //This needs to match data-tilt-scale 3d effect, to avoid zooming
+    //backface-visibility: hidden; //might help smooth some jagged edges
+    
+    .tilt-front {
+        position: absolute;
+        transform: translateZ(20px);
+        z-index: 10;
+        top: 0;
+    }
+    
+    
+    .tilt-middle {
+        position: absolute;
+        transform: translateZ(10px);
+        z-index: 5;
+        top: 0;
+    }
+
+    .tilt-back {
+        position: relative;
+    }
+    
+    img {
+    }
+}
+
+
+/* Lazy Load */
+
+.blur-up {
+        filter: blur(3px);
+        transition: filter 750ms, 
+    }
+
+.blur-up.lazyloaded {
+    filter: blur(0) drop-shadow(0 0 0 rgba(0, 0, 0, 0)); //drop-shadow is fixing jagged edges on PNGs in Chrome
+}
+

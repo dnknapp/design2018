@@ -1,0 +1,57 @@
+/**
+ * All styles related to markup inside the header
+ */
+
+header {
+    //float: left;
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+    
+}
+.name {
+    //float: left;
+    width: 100%;
+    //margin: 0 -.8%;
+    
+}
+
+.contact {
+    display: inline-block;
+    margin: 0 2rem .5rem 0;
+    @include breakpoint($break_small) {
+        margin-right: 1.5rem;
+    }
+    @include breakpoint($break_medium) {
+        //float: right;
+        //margin-right: 0;
+    }
+    
+}
+
+.header-sub-container {
+    //float: right;
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto 0;
+    @include breakpoint($break_medium) {
+        //width: 37%;
+    }
+   
+}
+
+.social {
+    display: inline-block;
+	text-align: right;
+	a {
+		margin: 0 .5rem;
+	}
+    
+	/*
+    &:before, 
+	&:after {
+    @extend %zigzag;
+		margin: .3em auto;
+	}
+    */
+	
+}

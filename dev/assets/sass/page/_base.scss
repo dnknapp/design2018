@@ -1,0 +1,171 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: $main-color;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-size: $font-base;
+	line-height: 1.4;
+	font-weight: 300;
+    //background: linear-gradient(155deg, $color_bali-hai 0%,$color_bg-blue 25%,$color_bali-hai 75%,$color_bg-blue 100%);
+    background: linear-gradient(155deg, $color_bali-hai 0%,$color_bg-blue 100%);
+    // background: red;  
+    background-attachment: fixed;
+} 
+
+canvas {
+  width: 100% !important; //Keeping the canvas object in the grid
+  height: auto !important;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: $selection-color;
+	text-shadow: none;
+}
+
+::selection {
+	background: $selection-color;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid $hr-color;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/*
+===============
+	Susy Setup
+
+==============
+*/
+
+$susy: (
+	gutters: .5,
+);
+
+html {
+	@include layout($susy);
+}
+
+/* ==========================================================================
+   Animate
+   ========================================================================== */
+.velocity {
+    opacity: 0;
+}
+
+.animate-in-slow {
+    position: relative;
+    top: 40px;
+    opacity: 0;
+}
+
+.animate-in-fast {
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+
+.animation-element {
+    position: relative;
+}
+
+.animation-element.slide-up {
+    opacity: 0;
+    transition: all 600ms linear;
+    transform: translate3d(0px, 30px, 0px);
+}
+
+.animation-element.slide-up-fast {
+    opacity: 0;
+    transition: all 500ms linear;
+    transform: translate3d(0px, 10px, 0px);
+}
+
+.animation-element.slide-up.in-view, 
+.animation-element.slide-up-fast.in-view {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
