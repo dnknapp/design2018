@@ -16,26 +16,16 @@ include('header.php');
 <main role="main" class="velocity">
 
 <div class="project-grid-header">    
-    <h1 class="animation-element slide-up">Projects</h1>
-    
-  <div class="filter-container animation-element slide-up">  
-      <div class="filter-title">Filter:</div>
-      <div class="filters">
-        <h6 class="filter-button filter-inactive" data-filter=".web">Interactive Design</h6>
-        <h6 class="filter-button filter-inactive" data-filter=".illo">Illustration</h6>
-        <h6 class="filter-button filter-inactive" data-filter=".print">Print Design</h6>   
-      </div>    
-    </div>
-      
+    <h1 class="animation-element slide-up">Projects</h1>     
 </div>      
 
-<ul class="isotope animation-element slide-up">
+<ul class="project-grid isotope animation-element slide-up">
   <li class="grid-sizer"></li>
   <li class="gutter-sizer"></li>
   
     
     <li class="item web illo">
-		<div class="item-transform">
+		
             <div class="title-wrapper">
                 <h2><a href="projects/yrly">YRLY</a></h2>
                 <div class="caption">Branding, Website &amp; Web App UX/UI Design, Illustration, Animation</div>
@@ -48,11 +38,10 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		</div>
     </li>
     
     <li class="item web">
-		<div class="item-transform">
+		
 			<div class="title-wrapper">
                 <h2><a href="projects/newhudson">New Hudson Facades</a></h2>
                 <div class="caption">Website UX/UI Design</div>
@@ -65,12 +54,12 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		</div>
+		
     </li>
     
     
     <li class="item web illo">
-		<div class="item-transform">
+		
             <div class="title-wrapper">
                 <h2><a href="projects/causeengine">CauseEngine</a></h2>
                 <div class="caption">Website &amp; Web App UX/UI Design, Illustration, Animation</div>
@@ -84,12 +73,12 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		</div>
+		
     </li>
     
     
     <li class="item web">
-		<div class="item-transform">
+		
 			<div class="title-wrapper">
                 <h2><a href="projects/vynamic">Vynamic</a></h2>
                 <div class="caption">Mobile App UX Design</div>
@@ -102,7 +91,7 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		</div>
+		
     </li>
     
     <!--
@@ -118,7 +107,7 @@ include('header.php');
     -->
 	
     <li class="item illo print">
-        <div class="item-transform">
+        
 		  <div class="title-wrapper">	
                 <h2><a href="projects/buntline">Buntline Beer</a></h2>
                 <div class="caption">Illustration, Package Design, Lettering</div>
@@ -131,12 +120,12 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		</div>
+		
   </li>
     
   
   <li class="item illo print">
-		<div class="item-transform">
+		
 			<div class="title-wrapper">
                 <h2><a href="projects/nyarlathotep">Nyarlathotep</a></h2>
                 <div class="caption">Illustration, Print Design</div>
@@ -149,7 +138,7 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		</div>
+		
   </li>
     
     
@@ -175,7 +164,7 @@ include('header.php');
     
 	
     <li class="item illo">
-		<div class="item-transform">
+		
             <div class="title-wrapper">
                 <h2><a href="projects/opossum">Or Opossums Will Eat Your Face</a></h2>
                 <div class="caption">Illustration</div>
@@ -188,12 +177,12 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		</div>
+		
     </li>
     
     
   <li class="item illo print">
-		<div class="item-transform">
+		
             <div class="title-wrapper">
                 <h2><a href="projects/ashley-invite">Ashley &amp; John's Wedding Invitation</a></h2>
                 <div class="caption">Illustration, Print Design, Lettering</div>
@@ -206,7 +195,7 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		</div> 
+		
   </li>
   
 </ul>

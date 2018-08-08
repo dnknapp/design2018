@@ -121,13 +121,13 @@ ul {
 ==============
 */
 
-$susy: (
-	gutters: .5,
-);
+// $susy: (
+// 	gutters: .5,
+// );
 
-html {
-	@include layout($susy);
-}
+// html {
+// 	@include layout($susy);
+// }
 
 /* ==========================================================================
    Animate

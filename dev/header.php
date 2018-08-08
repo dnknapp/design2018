@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/assets/css/main.css">
         <!--endbuild-->
 			
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		
 		<!--<script src="assets/bower_components/modernizr/modernizr.js"></script>-->
 		

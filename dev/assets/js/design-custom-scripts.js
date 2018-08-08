@@ -1,4 +1,4 @@
-//Give Isotope Titles the same height. All manually called in Isotope JS
+//Give Project Grid Titles the same height
 $(function() {
     $('.title-wrapper').matchHeight({ 
         byRow: true,

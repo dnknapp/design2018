@@ -24,8 +24,8 @@ var runSequence = require('run-sequence');
 gulp.task('browserSync', function() {
     browserSync.init({
         open: 'external',
-        host: 'design2017b-dev', //virtual host defined in etc/hosts/ and httpd-vhosts.conf
-        proxy: 'design2017b-dev' //virtual host defined in etc/hosts/ and httpd-vhosts.conf
+        host: 'design2018-dev', //virtual host defined in etc/hosts/ and httpd-vhosts.conf
+        proxy: 'design2018-dev' //virtual host defined in etc/hosts/ and httpd-vhosts.conf
         // port: 8080 //new port for browsersync
         
     });

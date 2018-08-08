@@ -3,24 +3,9 @@
 }
 
 .project {
-	@extend .isotope;
     padding-top: 3rem;
     position: relative;
 }
-
-/*
-.project {
-	width: 100%;
-	margin: 0 auto 2.5rem auto;
-	border: 3.5rem solid $color_beige;
-  background: $color_beige;
-	text-align: center;
-	//min-height: 1000px; //hack to prevent gutters from shifting	
-	&:after {
-		@extend %clearfix;
-	}
-}
-*/
 
 .project-header-container {
     @extend main;
@@ -73,41 +58,11 @@
 }
 
 .project-images {
-	@include span(9 of 9 last);
-	img {
-		//box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
-        //filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.2)); 
-	}
-	@include breakpoint($break_medium-portfolio) {
-		@include span(9 of 9 last);
-	}
-	@include breakpoint($break_small-portfolio) {
-		@include span(9 of 9);
-	}
+	width: 100%;
 }
 
-
-
-.portfolio-img-half {
-	@include span(4 of 8);
-	&:nth-child(even) { //this was 2n, seems to fix right/left image problem
-		@include span(4 of 8 last);
-	}
-}
-
-.portfolio-img, .portfolio-img-half {
+.portfolio-img {
     margin-bottom: 3rem;
-    .caption {
-        margin-left: .9em;
-        text-indent: -.9em;
-        margin-bottom: .5rem;
-        &:before {
-            content: "\f0d7";
-            font-family: FontAwesome;
-            font-size: 1.25em;
-            margin-right: .3em;
-        }
-    }
 }
 
 
@@ -169,17 +124,9 @@
     }
 }
 
-img.portfolio-img-no-shadow {
-	box-shadow: none;
-}
-
-.project-break {
-	@include span(9 of 9);
-}
-
 .explode-container {
 	position:relative;
-	@include span(9 of 9);
+	width: 100%;
     padding:7rem 7% 4rem 7%;
     //border-top: 2px solid $color_bali-hai;
 	//border-bottom: 2px solid $color_bali-hai;

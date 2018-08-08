@@ -3,7 +3,7 @@
  */
 
 .container {
-	@include container;
+	// @include container;
 	@extend %clearfix;
     padding: .5rem 2%;
 }
@@ -41,10 +41,6 @@ main {
     }
 } 
 
-#intro-img {
-    
-}
-
 #intro-img img {
     margin: 0 auto;
     width: 150px;
@@ -64,7 +60,7 @@ main {
 }
     
 .project-grid-header {
-    margin: 2rem 0 5rem 0;
+    margin: 2rem 0 0 0;
         //position: relative;
         //top: -2rem;
     h1 {
@@ -73,92 +69,29 @@ main {
         vertical-align: top;
     }
     @include breakpoint($break_small) {
-        margin: 1.5rem 0 2.5rem 0;
+        margin: 1.5rem 0 0 0;
     }
 }    
 
-/* ---- Filter ----- */
-
- 
-    
-.filter-container {
-	display: inline-block;
-	margin: 1rem 0 0 3rem;
-	//padding: 0 0 0 3rem;
-}
-
-.filter-title {
-	margin-bottom: .5rem;
-    
-}
-
-.filters {
-	//margin: 0 auto;
-	//@extend %clearfix;
-	@include breakpoint($break_small) {
-		//width: 300px;
-	}
-}
-
-
-
-
-/* ---- isotope test ---- */
-
-.isotope {
-	width: 100%;
-	margin: 0 auto;
-	min-height: 1000px; //fix to prevent gutters from shifting	
-	&:after {
-		@extend %clearfix;
-	}
-}
-
-
-
-/* Isotope grid setup */
-
-
-.item,
-.grid-sizer {
-  width: 46.5%;
-	@include breakpoint($break_small-grid) {
-		width: 100%;
-	}
-}
-
-.gutter-sizer { 
-	width: 7%; 
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6vw;
+    grid-row-gap:6vw;
+    align-items: stretch;
+    @include breakpoint($break_small-grid) {
+        grid-template-columns: 1fr;
+        grid-row-gap:10vw;
+    }
 }
 
 .item {
     min-height: 100px;
-	margin-bottom: 6vw;
-	@extend %clearfix;
-    @include breakpoint($break_small-grid) {
-        margin-bottom: 10vw;
-    }
-    @include breakpoint($break_small) {
-        margin-bottom: 13vw;
-    }
     
-	.item-transform {
-		transition: all .3s;
-		transform: scale(1);
+    .item-image {
+        overflow: hidden; //hide edges of transforms
+    }	
 
-        .item-image {
-            overflow: hidden; //hide edges of transforms
-        }	
-        
-        img {
-            //box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
-            //transition: all .3s;
-        }   
-        
-        h2, .caption {
-            width: 100%;
-        } 
-	}
 }
 
 
