@@ -1,5 +1,5 @@
 $(function(){
-    if($('div').hasClass('yrly-animation')){ // run the animation only in this div. Prevents errors on other pages.
+    if($('svg').hasClass('yrly-animation-svg')){ // run the animation only in this svg. Prevents errors on other pages.
 
     var planetSmall = document.getElementById('planet-small');
     var planetMed = document.getElementById('planet-med');
