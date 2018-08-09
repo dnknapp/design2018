@@ -4,28 +4,27 @@ include('header.php');
 ?>
 
 
-<div class="intro-container" >
-    <div id="intro-img" class="velocity" ><img src="assets/img/blondie.jpg" alt="intro image"></div>
-    
-    
-    <section id="intro" class="velocity">
+<div class="intro header-grid" >
+    <div id="intro-img" class="load-fade-in" ><img src="assets/img/blondie.jpg" alt="intro image"></div>
+    <section id="intro" class="load-fade-in">
         <h5>I’m an Interactive Designer and Illustrator. I work with clients to solve communication problems with thoughtful UX/UI solutions. My illustrations bring ideas and characters to life through organic forms and simple color palettes. I believe in distilling big, creative concepts into innovative and honest designs.</h5>
     </section>
 </div>
 
-<main role="main" class="velocity">
+<main role="main" class="load-fade-in">
 
-<div class="project-grid-header">    
-    <h1 class="animation-element slide-up">Projects</h1>     
-</div>      
-
-<ul class="project-grid isotope animation-element slide-up">
-  <li class="grid-sizer"></li>
-  <li class="gutter-sizer"></li>
-  
     
-    <li class="item web illo">
-		
+
+
+<!-- <div class="project-grid-header">    
+         
+</div>       -->
+
+<ul class="project-grid">
+    <h1>Projects</h1>
+    
+    <li id="yrly" class="item scroll-fade-in">
+        
             <div class="title-wrapper">
                 <h2><a href="projects/yrly">YRLY</a></h2>
                 <div class="caption">Branding, Website &amp; Web App UX/UI Design, Illustration, Animation</div>
@@ -38,10 +37,11 @@ include('header.php');
                     </div>
                 </div>
             </a>
+        
     </li>
     
-    <li class="item web">
-		
+    <li id="newhudson" class="item scroll-fade-in">
+
 			<div class="title-wrapper">
                 <h2><a href="projects/newhudson">New Hudson Facades</a></h2>
                 <div class="caption">Website UX/UI Design</div>
@@ -54,11 +54,14 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		
+         
     </li>
     
     
-    <li class="item web illo">
+
+
+    
+    <li id="causeengine" class="item scroll-fade-in">
 		
             <div class="title-wrapper">
                 <h2><a href="projects/causeengine">CauseEngine</a></h2>
@@ -73,12 +76,12 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		
+        
     </li>
     
     
-    <li class="item web">
-		
+    <li id="vynamic" class="item scroll-fade-in">
+        
 			<div class="title-wrapper">
                 <h2><a href="projects/vynamic">Vynamic</a></h2>
                 <div class="caption">Mobile App UX Design</div>
@@ -91,27 +94,17 @@ include('header.php');
                     </div>
                 </div>
             </a>
-		
+        
     </li>
     
-    <!--
-    <li class="item print illo">
-		<div class="item-transform">
-			<div class="title-wrapper">
-                <h2><a href="projects/logos">Logos &amp; Misc. Illustration</a></h2>
-                <div class="caption">Illustration, Print Design</div>
-            </div>
-			<div class="item-image"><a href="projects/logos"><img src="assets/img/thumbs/logos-thumb-lq.jpg" data-src="assets/img/thumbs/logos-thumb.png" alt="Logos &amp; Misc." class="lazyload blur-up"></a></div>
-		</div>
-    </li>
-    -->
+  
 	
-    <li class="item illo print">
+    <li id="buntline" class="item scroll-fade-in">
         
-		  <div class="title-wrapper">	
+		    <div class="title-wrapper">	
                 <h2><a href="projects/buntline">Buntline Beer</a></h2>
                 <div class="caption">Illustration, Package Design, Lettering</div>
-          </div>
+            </div>
             <a href="projects/buntline">
                 <div class="item-image">
                     <div class="tilt">
@@ -121,10 +114,10 @@ include('header.php');
                 </div>
             </a>
 		
-  </li>
+    </li>
     
   
-  <li class="item illo print">
+    <li id="nyarlathotep" class="item scroll-fade-in">
 		
 			<div class="title-wrapper">
                 <h2><a href="projects/nyarlathotep">Nyarlathotep</a></h2>
@@ -141,29 +134,10 @@ include('header.php');
 		
   </li>
     
-    
-  <!--
-  <li class="item illo print">
-		<div class="item-transform">
-			<h2><a href="projects/business-card">Business Card</a></h2>
-            <div class="caption">Illustration, Print Design</div>
-			<div class="item-image"><a href="projects/business-card"><img src="assets/img/thumbs/businesscard-thumb-lq.jpg" data-src="assets/img/thumbs/businesscard-thumb.jpg" alt="Business Card" class="lazyload blur-up"></a></div>
-		</div>
-  </li>
--->
-    
-    <!--
-    <li class="item print">
-		<div class="item-transform">
-			<h2><a href="projects/fam">Fleisher Art Memorial</a></h2>
-            <div class="caption">Print Design</div>
-			<div class="item-image"><a href="projects/fam"><img src="assets/img/thumbs/fam-thumb-lq.jpg" data-src="assets/img/thumbs/fam-thumb.jpg" alt="Fleisher Art Memorial" class="lazyload blur-up"></a></div>
-		</div>
-    </li>
-    -->
+
     
 	
-    <li class="item illo">
+    <li id="opossum" class="item scroll-fade-in">
 		
             <div class="title-wrapper">
                 <h2><a href="projects/opossum">Or Opossums Will Eat Your Face</a></h2>
@@ -181,7 +155,7 @@ include('header.php');
     </li>
     
     
-  <li class="item illo print">
+    <li id="ashley" class="item scroll-fade-in">
 		
             <div class="title-wrapper">
                 <h2><a href="projects/ashley-invite">Ashley &amp; John's Wedding Invitation</a></h2>
@@ -196,7 +170,7 @@ include('header.php');
                 </div>
             </a>
 		
-  </li>
+    </li>
   
 </ul>
     

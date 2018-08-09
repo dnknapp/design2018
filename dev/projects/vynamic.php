@@ -3,11 +3,11 @@ $pageTitle = "Vynamic";
 include("../header.php");
 ?>
 
-<div class="intro-container">  
-    <section id="intro">
-			<h1 class="velocity"><?php echo $pageTitle; ?></h1>
-			<p class="velocity">Vynamic is a healthcare industry management consulting firm that is driven by a healthy work culture. With a quickly growing employee roster, they sought a technological solution to encourage employees who may not cross paths day-to-day to get to know each other.</p>
-			<div class="velocity">
+<div class="intro header-grid">  
+    <section id="project-intro">
+			<h1 class="load-fade-in"><?php echo $pageTitle; ?></h1>
+			<p class="load-fade-in">Vynamic is a healthcare industry management consulting firm that is driven by a healthy work culture. With a quickly growing employee roster, they sought a technological solution to encourage employees who may not cross paths day-to-day to get to know each other.</p>
+			<div class="load-fade-in">
                 <h3>Credits</h3>
                 <p class="meta"><strong>Agency:&nbsp;</strong>Impart Creative</p>
                 <p class="meta"><strong>Responsibilities:&nbsp;</strong>Concept, UX/UI Design</p>
@@ -15,7 +15,7 @@ include("../header.php");
     </section>
 </div>
 
-<main role="main" class="project-main velocity">
+<main role="main" class="project-main load-fade-in">
   <article class="project">
 		<div class="project-images">
             <div class="portfolio-img">

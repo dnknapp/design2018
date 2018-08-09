@@ -11,7 +11,12 @@
         
 
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<!-- Place favicon.ico in the root directory -->
+        <!-- Place favicon.ico in the root directory -->
+        
+        <!-- detect if javascript is enabled, simpler than modernizr -->
+        <script>
+            document.documentElement.className = document.documentElement.className.replace("no-js","js");
+        </script>
 		<!-- Font Awesome -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 		<!--Typekit-->
@@ -21,30 +26,22 @@
         <!--endbuild-->
 			
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		
-		<!--<script src="assets/bower_components/modernizr/modernizr.js"></script>-->
-		
-        
+
 	</head>
-    
+
     
 	<body> 
 		
       <div class="container"> 
-            <header class="velocity">
+            <header class="header-grid load-fade-in" >
                 <div class="name" role="banner"><a href="/">Daniel Knapp</a></div>
-                
                 <h3 class="city">Philadelphia, PA</h3>
-                
-                <div class="header-sub-container">		
-                    <div class="contact"><a href="mailto:dan@dnknapp.com">Dan@dnknapp.com</a></div>
-                    <div class="contact"><a href="/assets/img/Daniel-Knapp-Resume-7-17.pdf" target="_blank">Résumé <i class="far fa-file-pdf"></i></a></div>
-                    <div class="social">
-                        <a href="//instagram.com/dnknapp" class="" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-                        <a href="//www.linkedin.com/in/dnknapp" class="" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
-                    </div>		
-                </div>
-					
+                <ul class="header-sub-container">
+                    <li class="contact"><a href="mailto:dan@dnknapp.com">Dan@dnknapp.com</a></li>
+                    <li class="contact"><a href="/assets/img/Daniel-Knapp-Resume-7-17.pdf" target="_blank" rel="noopener noreferrer">Résumé <i class="far fa-file-pdf"></i></a></li>
+                    <li class="social">
+                        <a href="//instagram.com/dnknapp" class="" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="//www.linkedin.com/in/dnknapp" class="" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                    </li>
+                </ul>
             </header>
-
-				

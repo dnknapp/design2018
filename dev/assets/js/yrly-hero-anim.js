@@ -1,4 +1,7 @@
-var planetSmall = document.getElementById('planet-small');
+$(function(){
+    if($('div').hasClass('yrly-animation')){ // run the animation only in this div. Prevents errors on other pages.
+
+    var planetSmall = document.getElementById('planet-small');
     var planetMed = document.getElementById('planet-med');
     var planetBig = document.getElementById('planet-big');
     var phone = document.getElementById('phone');
@@ -96,3 +99,5 @@ var planetSmall = document.getElementById('planet-small');
         .to([orbitBack, orbitFront], 5, {x:0, y:0, ease:Power1.easeInOut})
         return tl;
     }
+}
+});

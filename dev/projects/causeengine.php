@@ -3,11 +3,11 @@ $pageTitle = "CauseEngine";
 include("../header.php");
 ?>
 
-<div class="intro-container">  
-        <section id="intro">
-			<h1 class="velocity"><?php echo $pageTitle; ?></h1>
-			<p class="velocity">CauseEngine is a hub for connecting creative professionals with non-profit organizations that need their help. CauseEngine wanted an updated website to reflect adjustments in their business strategy, as well as to take advantage of changes to user registration in the back-end.</p>
-			<div class="velocity">
+<div class="intro header-grid">  
+        <section id="project-intro">
+			<h1 class="load-fade-in"><?php echo $pageTitle; ?></h1>
+			<p class="load-fade-in">CauseEngine is a hub for connecting creative professionals with non-profit organizations that need their help. CauseEngine wanted an updated website to reflect adjustments in their business strategy, as well as to take advantage of changes to user registration in the back-end.</p>
+			<div class="load-fade-in">
                 <h3>Credits</h3>
                 <p class="meta"><strong>Agency:&nbsp;</strong>Impart Creative</p>
                 <p class="meta"><strong>Responsibilities:&nbsp;</strong>Design, Illustration, Animation</p>
@@ -15,7 +15,7 @@ include("../header.php");
 		</section>
 </div>
     
-<main role="main" class="project-main velocity">
+<main role="main" class="project-main load-fade-in">
 
 
   <article class="project">  

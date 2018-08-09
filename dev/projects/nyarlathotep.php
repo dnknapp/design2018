@@ -3,15 +3,15 @@ $pageTitle = "Nyarlathotep";
 include("../header.php");
 ?>
 
-<div class="intro-container">  
-    <section id="intro">
-        <h1 class="velocity"><?php echo $pageTitle; ?></h1>
-        <p class="velocity">A screen printed book cover for Masthead Print Studio's Halloween art show.</p>
+<div class="intro header-grid">  
+    <section id="project-intro">
+        <h1 class="load-fade-in"><?php echo $pageTitle; ?></h1>
+        <p class="load-fade-in">A screen printed book cover for Masthead Print Studio's Halloween art show.</p>
         
     </section>
 </div>
 
-<main role="main" class="project-main velocity">
+<main role="main" class="project-main load-fade-in">
 
   <article class="project">
 

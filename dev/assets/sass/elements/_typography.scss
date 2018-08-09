@@ -24,9 +24,7 @@ h3 {
 	font-weight: 400;
 	margin: 0;
 	text-align: left;
-	//text-transform: uppercase;
 }
-
 
 h4 {
 	font-family: $font-main;
@@ -36,8 +34,6 @@ h4 {
 a {
 	color: $color_bali-hai;
 }
-
-
 
 h1 {
 	font-weight: 300;
@@ -56,14 +52,10 @@ h1 {
     }
 }
 
-.project-grid-header {
+.project-grid {
     h1 {
         color: $color_bali-hai;
     }
-}
-
-#intro h1 {
-    font-size: 2.5rem;
 }
 
 h2 {
@@ -90,14 +82,6 @@ h3 {
         text-align: center;
         margin: .75rem 0;
     }
-}
-
-#intro h3 {
-    color: #fff;
-}
-
-h3 .city {
-    
 }
 
 h5 {
@@ -135,24 +119,27 @@ p {
     }
 }
 
-#intro p, #intro a {
-    color: #fff;
+
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 .name {
 	font-family: $font-secondary;
     font-weight: 700;
-	font-size: 7.5vw;
+	font-size: 7.2vw;
 	letter-spacing: .03em;
 	line-height: .8;
-	text-align: center;
+	text-align-last: justify;
 	text-decoration: none;
 	text-transform: uppercase;
     overflow: hidden; //combined with line-height reduces link clickable area
     @include breakpoint($break_medium-portfolio) {
-        font-size: 10.7vw;
+        font-size: 10.4vw;
     }
-    
     
     a {
 		text-decoration: none;
@@ -162,7 +149,6 @@ p {
 			color: rgba(255,255,255,.8);
 		}
 	}
-	
 }
 
 .contact, .social {
@@ -176,44 +162,11 @@ p {
 		transition: all .2s;
 		&:hover {
 			color: rgba(255,255,255,.8);
-		}
-	}
-}
-
-
-
-.filter-title {
-    font-family: $font-secondary;	
-	color: $main-color;
-	text-align: left;
-    font-size: .8rem;
-    font-weight: 300;
-	//text-transform: uppercase;
-    //letter-spacing: .04em;
-}
-
-h6.filter-button {
-    transition: all .2s;
-    cursor: pointer;
-    //color: $main-color;
-    margin: 0 0 .5rem 0;
-}
-
-.filter-inactive {
-    color: $main-color;
-    
-}
-
-.filter-active {
-    font-size: 1.75rem;
-    color: $color_bali-hai;
-}
-
-.amp-before {
-    transition: all .2s;
-    &:before {
-         content: "& ";    
         }
+        .svg-inline--fa {
+            font-weight: 400;
+        }
+	}
 }
 
 .caption {
@@ -224,20 +177,26 @@ h6.filter-button {
     color: $main-color;
 }
 
-.project .caption {
-    color: $main-color;
-}
-
 .meta {
 	font-size: .875em;
 	margin: 0;
 }
 
-.browse-container {
+/*------------------------
+Project pages
+------------------------*/
+#project-intro h1 {
+    font-size: 2.5rem;
+}
+
+#project-intro h3, #project-intro p, #project-intro a {
+    color: #fff;
+}
+
+.browse-container { // footer navigation
     h2, h3, p, li {
         color: #fff;
         text-align: left;
-        
         a {
             color: #fff;
             text-decoration: none;
@@ -259,9 +218,3 @@ h6.filter-button {
         margin-bottom: .25rem;
     }
 }
-
-/*
-.wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading h4, .wf-loading p, .wf-loading .name, .wf-loading .contact, .wf-loading .filter-title, .wf-loading .caption, .wf-loading .meta, {
-visibility: hidden;
-}
-*/

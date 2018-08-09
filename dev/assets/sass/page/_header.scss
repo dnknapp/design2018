@@ -3,16 +3,46 @@
  */
 
 header {
-    //float: left;
     width: 100%;
     margin: 1rem 0 2rem 0;
     
 }
-.name {
-    //float: left;
+
+.header-grid {
     width: 100%;
-    //margin: 0 -.8%;
-    
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: max-content;
+    margin: 1rem 0 2rem 0;
+    @include breakpoint($break_medium-portfolio) {
+        grid-template-columns: 6% auto 6%;
+    }
+    .name {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    .city {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    .header-sub-container {
+        grid-row-start: 3;
+        grid-column-start: 2;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: .5rem;
+        .contact, .social {
+            margin: 0 1rem;
+            @include breakpoint($break_small) {
+                margin: 0 .75rem;
+            }
+        }
+    }
+    .browse-container {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
 }
 
 .contact {
@@ -21,22 +51,6 @@ header {
     @include breakpoint($break_small) {
         margin-right: 1.5rem;
     }
-    @include breakpoint($break_medium) {
-        //float: right;
-        //margin-right: 0;
-    }
-    
-}
-
-.header-sub-container {
-    //float: right;
-    width: 100%;
-    text-align: center;
-    margin: 1rem auto 0;
-    @include breakpoint($break_medium) {
-        //width: 37%;
-    }
-   
 }
 
 .social {
@@ -44,14 +58,5 @@ header {
 	text-align: right;
 	a {
 		margin: 0 .5rem;
-	}
-    
-	/*
-    &:before, 
-	&:after {
-    @extend %zigzag;
-		margin: .3em auto;
-	}
-    */
-	
+	}	
 }

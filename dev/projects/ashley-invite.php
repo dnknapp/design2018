@@ -3,14 +3,14 @@ $pageTitle = "Ashley & John's Wedding Invitation";
 include("../header.php");
 ?>
 
-<div class="intro-container">  
-    <section id="intro">
-        <h1 class="velocity"><?php echo $pageTitle; ?></h1>
-        <p class="velocity">Ashley and John are longtime friends and I was happy to create a screen printed wedding invitation for them. The wedding was held at the Horticultural Center in Fairmount Park, so I drew inspiration from the original Horticultural Hall of the Centennial Exhibition for the Victorian-style invitation.</p>
+<div class="intro header-grid">  
+    <section id="project-intro">
+        <h1 class="load-fade-in"><?php echo $pageTitle; ?></h1>
+        <p class="load-fade-in">Ashley and John are longtime friends and I was happy to create a screen printed wedding invitation for them. The wedding was held at the Horticultural Center in Fairmount Park, so I drew inspiration from the original Horticultural Hall of the Centennial Exhibition for the Victorian-style invitation.</p>
     </section>
 </div>
     
-<main role="main" class="project-main velocity">
+<main role="main" class="project-main load-fade-in">
 
   <article class="project">  	
 		<div class="project-images">

@@ -4,12 +4,12 @@ include("../header.php");
 
 ?>
 
-<div class="intro-container">  
-    <section id="intro">
-			<h1 class="velocity"><?php echo $pageTitle; ?></h1>
-			<p class="velocity">YRLY is a web app, currently under development, designed to help non-profits easily create great-looking online annual reports. I have been responsible for all aspects of design: from branding, to planning the features of a minimum viable product, to designing the user interface.</p>
+<div class="intro header-grid">  
+    <section id="project-intro">
+			<h1 class="load-fade-in"><?php echo $pageTitle; ?></h1>
+			<p class="load-fade-in">YRLY is a web app, currently under development, designed to help non-profits easily create great-looking online annual reports. I have been responsible for all aspects of design: from branding, to planning the features of a minimum viable product, to designing the user interface.</p>
             
-			<div class="velocity">
+			<div class="load-fade-in">
                 <h3>Credits</h3>
                 <p class="meta"><strong>Agency:&nbsp;</strong>Impart Creative</p>
                 <p class="meta"><strong>Responsibilities:&nbsp;</strong>Competitor Research, Feature Planning, Branding, Content, Sitemap, Wireframes, Website Design, App Design, Illustration, Animation</p>
@@ -17,9 +17,9 @@ include("../header.php");
 		</section>
 </div>
     
-<main role="main" class="project-main velocity">
+<main role="main" class="project-main load-fade-in">
 
-
+ 
   <article class="project">
     
     <div class="project-images">
@@ -47,8 +47,6 @@ include("../header.php");
                 <p>The hero image is an SVG that I created in Illustrator and animated using Greensock. The combination of technologies enables me to create complex animations quickly and ensure cross-browser compatibility, while maintaining small file sizes and high frame rates.</p>
                 <!-- <img src="../assets/img/yrly/yrly-hero-animation-600px.gif" alt="YRLY Homepage"> -->
                 <?php echo file_get_contents('../assets/img/yrly/yrly-hero-anim.svg'); ?> 
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-                <script src="../assets/img/yrly/yrly-hero-anim.js"></script>
             </div>
            
 		</div>

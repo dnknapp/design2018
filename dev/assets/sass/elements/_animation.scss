@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Animate elements
+   ========================================================================== */
+
+.load-fade-in,  {
+    visibility: hidden;
+}
+
+.no-js .load-fade-in, .no-js .animation-new {
+    visibility: visible;
+}
+
+.scroll-fade-in {
+    visibility: hidden;
+}
+
+.no-js .fade-in {
+    visibility: visible;
+}

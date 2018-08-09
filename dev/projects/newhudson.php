@@ -3,11 +3,11 @@ $pageTitle = "New Hudson Facades";
 include("../header.php");
 ?>
 
-<div class="intro-container">  
-    <section id="intro">
-        <h1 class="velocity"><?php echo $pageTitle; ?></h1>
-        <p class="velocity">New Hudson Facades is an architectural facade company working on the largest projects in New York. I redesigned and expanded their site for a new sales focus on the company's technology, manufacturing abilities, and services.</p>
-        <div class="velocity">
+<div class="intro header-grid">  
+    <section id="project-intro">
+        <h1 class="load-fade-in"><?php echo $pageTitle; ?></h1>
+        <p class="load-fade-in">New Hudson Facades is an architectural facade company working on the largest projects in New York. I redesigned and expanded their site for a new sales focus on the company's technology, manufacturing abilities, and services.</p>
+        <div class="load-fade-in">
             <h3>Credits</h3>
             <p class="meta"><strong>Agency:&nbsp;</strong>Impart Creative</p>
             <p class="meta"><strong>Responsibilities:&nbsp;</strong>Sitemap, UX/UI Design</p>
@@ -15,7 +15,7 @@ include("../header.php");
     </section>
 </div>
     
-<main role="main" class="project-main velocity">
+<main role="main" class="project-main load-fade-in">
 
 
   <article class="project">

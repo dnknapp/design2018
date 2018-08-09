@@ -3,15 +3,15 @@ $pageTitle = "Buntline Beer";
 include("../header.php");
 ?>
 
-<div class="intro-container">  
-    <section id="intro">
-        <h1 class="velocity"><?php echo $pageTitle; ?></h1>
-        <p class="velocity">Masthead Print Studio's Shelf Life show paired artists and homebrewers to create small batch beers with custom labels.</p>
+<div class="intro header-grid">  
+    <section id="project-intro">
+        <h1 class="load-fade-in"><?php echo $pageTitle; ?></h1>
+        <p class="load-fade-in">Masthead Print Studio's Shelf Life show paired artists and homebrewers to create small batch beers with custom labels.</p>
         
     </section>
 </div>
     
-<main role="main" class="project-main velocity">
+<main role="main" class="project-main load-fade-in">
 
   <article class="project">  
 		
